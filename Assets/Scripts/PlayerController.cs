@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
  public int moveSpeed = 5;
+ public int rangeX = 15;
 
  public GameObject food;
     // Start is called before the first frame update
@@ -19,14 +20,14 @@ public class PlayerController : MonoBehaviour
      float horizontalInput = Input.GetAxis("Horizontal");
      transform.Translate(Vector3.right * moveSpeed * horizontalInput * Time.deltaTime);
 
-     if (transform.position.x > 15)
+     if (transform.position.x > rangeX)
      {
-         transform.position = new Vector3(15, 0, 0);
+         transform.position = new Vector3(rangeX, 0, 0);
      }
 
-     if (transform.position.x < -15)
+     if (transform.position.x < -rangeX)
      {
-         transform.position = new Vector3(-15, 0, 0);
+         transform.position = new Vector3(-rangeX, 0, 0);
      }
 
      if (Input.GetKeyDown(KeyCode.Space))
