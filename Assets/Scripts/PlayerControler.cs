@@ -8,12 +8,14 @@ public class PlayerControler : MonoBehaviour
     public float jumpForce;
     public float gravityModifier;
     private Rigidbody rigidbody;
+    private Animator animator;
     private bool isOnGround = true;
     public bool isGameOver = false;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
       Physics.gravity *= gravityModifier;  
     }
 
@@ -24,6 +26,7 @@ public class PlayerControler : MonoBehaviour
         {
             rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            animator.SetTrigger("Jump_trig");
         }
     }
 
@@ -36,6 +39,8 @@ public class PlayerControler : MonoBehaviour
         if(other.gameObject.TryGetComponent(out Obstacle obstacle))
         {
             isGameOver = true;
+            animator.SetBool("Death_b", true);
+            animator.SetInteger("DeathType_int",1);
         }  
             
     }
