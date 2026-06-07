@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6107850-3e21-4ad8-98c0-5004ea305167" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MishaUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MishaUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Course Library/_Source_Files/Materials/PolygonPrototype_Texture_01.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +98,7 @@
       <workItem from="1778400867030" duration="2642000" />
       <workItem from="1779609872491" duration="2741000" />
       <workItem from="1780214879927" duration="2567000" />
+      <workItem from="1780816173434" duration="5285000" />
     </task>
     <servers />
   </component>
